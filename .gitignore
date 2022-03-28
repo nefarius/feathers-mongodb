@@ -58,3 +58,4 @@ coverage
 
 # The compiled/babelified modules
 lib/
+/package-lock.json
