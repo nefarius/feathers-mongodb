@@ -5,7 +5,7 @@
   "homepage": "https://github.com/feathersjs/feathers-mongodb",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feathersjs/feathers-mongodb.git"
+    "url": "git://github.com/nefarius/feathers-mongodb.git"
   },
   "bugs": {
     "url": "https://github.com/feathersjs/feathers-mongodb/issues"
