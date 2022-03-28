@@ -229,7 +229,7 @@ class Service {
     let { query, options } = this._multiOptions(id, params);
 
     return this.Model
-        .update(query, this._normalizeId(id, data), options)
+        .replaceOne(query, this._normalizeId(id, data), options)
         .then(() => this._findOrGet(id))
         .then(select(params, this.id))
         .catch(errorHandler);
