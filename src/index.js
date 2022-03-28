@@ -168,8 +168,7 @@ class Service {
     };
 
     return this.Model
-      .insert(Array.isArray(data) ? data.map(setId) : setId(data))
-      .then(result => result.ops.length > 1 ? result.ops : result.ops[0])
+      .insertOne(Array.isArray(data) ? data.map(setId) : setId(data))
       .then(select(params, this.id))
       .catch(errorHandler);
   }
